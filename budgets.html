@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budgets</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="budgets.html">Budgets</a>
+  </nav>
+  <div class="container">
+    <h1>Budgets</h1>
+    <form id="budgetForm">
+      <input type="text" id="budgetCategory" placeholder="Category" required>
+      <input type="number" id="budgetAmount" placeholder="Amount" step="0.01" required>
+      <input type="month" id="budgetMonth" required>
+      <button type="submit">Set Budget</button>
+    </form>
+    <div id="budgetList"></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

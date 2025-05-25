@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transactions</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="budgets.html">Budgets</a>
+  </nav>
+  <div class="container">
+    <h1>Transactions</h1>
+    <form id="transactionForm">
+      <input type="hidden" id="transactionId">
+      <select id="type" required>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <input type="number" id="amount" placeholder="Amount" step="0.01" required>
+      <input type="text" id="category" placeholder="Category" required>
+      <input type="date" id="date" required>
+      <input type="text" id="description" placeholder="Description">
+      <button type="submit">Save</button>
+    </form>
+    <div id="transactionList"></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

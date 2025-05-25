@@ -31,7 +31,7 @@ Prerequisites:
 Installation Steps:
 
 1. Clone the Repository:
-   git clone https://github.com/your-username/finance-tracker.git
+   git clone https://github.com/onearmdeveloper/finance-tracker.git
    cd finance-tracker
 
 2. Install Dependencies:
